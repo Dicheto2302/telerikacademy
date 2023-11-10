@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+        .Title {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+        body {
+            background-color: #f5f6f9;
+        }
+        .rows {
+            height: 67px;
+            display: flex;
+        }
+        .names {
+            display: flex;
+            width: 262px;
+        }
+        .textalign {
+            width: 177px;
+            height: 67px;
+            margin-right: 16px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        table {
+            margin-left: 231px;
+            margin-right: 231px;
+        }
+        .number {
+            width: 56px;
+            height: 67px;
+            margin-right: 16px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+        .buttonalign {
+            width: 102.45px;
+            height: 67px;
+        }
+        .button {
+            border: none;
+            width: 70.45px;
+            height: 28px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            background-color: #1199FA;
+            color: white;
+            /* padding: 16px; */
+            border-radius: 16px;
+        }
+        .logos {
+            width: 24px;
+            height: 24px;
+            margin-top: 17px;
+            margin-right: 5px;
+        }
+        .alligntextname {
+            text-align: left;
+            
+        }
+        .firstrow {
+            height: 42px;
+            display: flex;
+            width: 1364px;
+            font-size: 12px;
+            
+            
+        }
+        .fnum {
+            width: 56px;
+            margin-right: -7px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            
+        }
+        .fstar {
+            width: 56px;
+            margin-right: 13px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+        }
+        .fname {
+            display: flex;
+            /* margin-right: 16px; */
+            margin-top: 15px;
+            margin-bottom: 25px;
+            margin-left: 15px;
+            width: 262px;
+            height: 42px;
+        }
+        .ftextalign {
+            width: 177px;
+            margin-right: 16px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        .frowtextallign {
+            width: 177px;
+            margin-right: 16px;
+            margin-top: 15px;
+            margin-bottom: 25px;
+            text-align: right;
+            font-size: 12px;
+        }
+        .subnames {
+            font-size: 14px;
+            color: #5d667b;
+            font-weight: 500;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+        }
+        .positive {
+            text-align: right;
+            color: green;
+        }
+        tbody>tr>:nth-child(4){ 
+            text-align: right;
+            width: 168px;
+            font-size: 14px;
+
+        }
+        tbody>tr>:nth-child(5){ 
+            text-align: right;
+            width: 177px;
+            font-size: 14px;
+
+        }
+        tbody>tr>:nth-child(6){ 
+            text-align: right;
+            width: 176px;
+            font-size: 14px;
+
+        }
+        tbody>tr>:nth-child(7){ 
+            text-align: right;
+            width: 176px;
+            font-size: 14px;
+
+        }
+        tbody>tr>:nth-child(8){ 
+            text-align: right;
+            width: 176px;
+            font-size: 14px;
+        }
+        table {
+            background-color: white;
+        }
+        tbody>tr {
+            border-bottom: 1px solid #C9CFDD;
+        }
+        tbody>:nth-child(1) {
+            height: 42px;
+            
+        }
+        .blockaddtofav {
+            width: 66px;
+            height: 68px;
+        }
+        .addtofav {
+            width: 34px;
+            height: 34px;
+            margin-left: 16px;
+            margin-right: 16px;
+            margin-top: 17px;
+            margin-bottom: 17px;
+            
+        }
+        tr:hover {
+            background-color: rgba(17, 153, 250, 0.12);
+        }
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 class="Title">Today's Cryptocurrency Prices</h1>
+    <table>
+        <tbody>
+            <tr class="firstrow">
+                <th class="fstar"></th>
+                <th class="fnum">#</th>
+                <th class="fname">NAME</th>
+                <th class="ftextalign">PRICE</th>
+                <th class="negatives 24hchangeetc frowtextallign">24H Change</th>
+                <th class="frowtextallign">24H Volume</th>
+                <th class="frowtextallign">Market Cap</th>
+                <th class="frowtextallign">7D chart</th>
+                <th></th>
+            </tr>
+
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">1</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/bitcoin/color_icon.png" alt=""> <div class="alligntextname"><p>Bitcoin <br> <span class="subnames">BTC</span></p></div></th>
+                <th class="textalign">$36,457.35</th>
+                <th class="positive 24hchangeetc textalign">+2.23%</th>
+                <th class="textalign">$38.61 B</th>
+                <th class="textalign">$709.39 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">2</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/ethereum/color_icon.png" alt=""> <div class="alligntextname"><p>Etherium <br> <span class="subnames">ETH</span></p></div></th>
+                <th class="textalign">$2,021.44</th>
+                <th class="positive 24hchangeetc textalign">+6.68%</th>
+                <th class="textalign">$68.76 B</th>
+                <th class="textalign">$243.11 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+                
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">3</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/tether/color_icon.png" alt=""> <div class="alligntextname"><p>Tether <br> <span class="subnames">USDC</span></p></div></th>
+                <th class="textalign">$1.00</th>
+                <th class="positive 24hchangeetc textalign">+0.01%</th>
+                <th class="textalign">$55.45 B</th>
+                <th class="textalign">$86.6 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">4</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/bnb/color_icon.png" alt=""> <div class="alligntextname"><p>BNB <br> <span class="subnames">BNB</span></p></div></th>
+                <th class="textalign">$251.03</th>
+                <th class="positive 24hchangeetc textalign">+1.90%</th>
+                <th class="textalign">$949.97 M</th>
+                <th class="textalign">$38.04 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">5</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/xrp/color_icon.png" alt=""> <div class="alligntextname"><p>XRP <br> <span class="subnames">XRP</span></p></div></th>
+                <th class="textalign">$0.6562</th>
+                <th class="positive 24hchangeetc textalign">+0.30%</th>
+                <th class="textalign">$2.18 B</th>
+                <th class="textalign">$35.18 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">6</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/usd-coin/color_icon.png" alt=""> <div class="alligntextname"><p>USD Coin <br> <span class="subnames">USDC</span></p></div></th>
+                <th class="textalign">$1.00</th>
+                <th class="positive 24hchangeetc textalign">+0.05%</th>
+                <th class="textalign">$6.25 B</th>
+                <th class="textalign">$24.03 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">7</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/solana/color_icon.png" alt=""> <div class="alligntextname"><p>Solana <br> <span class="subnames">SOL</span></p></div></th>
+                <th class="textalign">$51.51</th>
+                <th class="positive 24hchangeetc textalign">+14.93%</th>
+                <th class="textalign">$2.95 B</th>
+                <th class="textalign">$21.82 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">8</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/steth/color_icon.png" alt=""> <div class="alligntextname"><p>Lido stETH <br> <span class="subnames">STETH</span></p></div></th>
+                <th class="textalign">$2,093,46</th>
+                <th class="positive 24hchangeetc textalign">+3.79%</th>
+                <th class="textalign">$35.35 M</th>
+                <th class="textalign">$18.72 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">9</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/cardano/color_icon.png" alt=""> <div class="alligntextname"><p>Cardano <br> <span class="subnames">ADA</span></p></div></th>
+                <th class="textalign">$0.372</th>
+                <th class="positive 24hchangeetc textalign">+3.64%</th>
+                <th class="textalign">$584.21 M</th>
+                <th class="textalign">$13.11 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+            <tr class="rows">
+                <th class="blockaddtofav"><img class="addtofav" src="https://upload.wikimedia.org/wikipedia/commons/f/fd/A_star.png"></th>
+                <th class="number">10</th>
+                <th class="names"><img class="logos" src="https://static.crypto.com/token/icons/dogecoin/color_icon.png" alt=""> <div class="alligntextname"><p>Dogecoin <br> <span class="subnames">DOGE</span></p></div></th>
+                <th class="textalign">$0.07414</th>
+                <th class="positive 24hchangeetc textalign">+4.25%</th>
+                <th class="textalign">$709.68 M</th>
+                <th class="textalign">$10.5 B</th>
+                <th class="textalign">7D chart</th>
+                <th><button class="button">Trade</button></th>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>
