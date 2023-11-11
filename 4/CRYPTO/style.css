@@ -22,6 +22,13 @@ body {
     margin-bottom: 25px;
     text-align: center;
 }
+.chart {
+    width: 110px;
+    height: 30px;
+    margin-right: 16px;
+    margin-top: 25px;
+    /* margin-bottom: 25px; */
+}
 table {
     margin-left: 231px;
     margin-right: 231px;
@@ -172,4 +179,9 @@ tbody>:nth-child(1) {
 }
 tr:hover {
     background-color: rgba(17, 153, 250, 0.12);
+}
+.diagram {
+    width: 35%;
+    text-align: right;
+    margin-left: 100px;
 }
